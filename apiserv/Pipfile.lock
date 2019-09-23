@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5f8e56d443a3162ab0859639579546e97701a5e94bbc23ad66f83b20e08ea4de"
+            "sha256": "3f67c7dabbbf871eebd65caedf52469587ac6fd1670071358205c7bcbbc54692"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -32,19 +32,19 @@
         },
         "aws-wsgi": {
             "hashes": [
-                "sha256:39e7e52d4681351e853ab056844153407b5ef159b652f2d37a51abd4ac3dfb7a",
-                "sha256:d414a74ca9bf5c7aac90f087143fd9ada60904216965d08ff0bfc3cafb5a9528"
+                "sha256:5d7e83b11969cd57c042ab6671b8acf4c824b8ade6187c9df69b735e0a211cd2",
+                "sha256:e27cf69896dd605aa6ede8bec1e3822931e0520e572da19a1fae4c560ea79613"
             ],
             "index": "pypi",
-            "version": "==0.2.0"
+            "version": "==0.2.2"
         },
         "boto3": {
             "hashes": [
-                "sha256:5d2665d1407c6dd932f609d72233b567a9959bf1409fc0e1b79ea6ff00f97324",
-                "sha256:b34199b188c03d233f23b39f1149d78e0edda6f69da09de9c46ba67f2850cec6"
+                "sha256:273d3cb6d0206d40b2020e1871e1d95b284cff870fdf1e8816701da1063474c4",
+                "sha256:6f9c9f393d4951b9e86d4b26ff5cf1d5b9845bd1c3eb9a2f6b969887c2e4155e"
             ],
             "index": "pypi",
-            "version": "==1.9.231"
+            "version": "==1.9.234"
         },
         "boto3-extensions": {
             "hashes": [
@@ -55,10 +55,10 @@
         },
         "botocore": {
             "hashes": [
-                "sha256:535d8a81418d7cac9de83abac1733c4e79dc5d0645c884c0d680c72df2d7825a",
-                "sha256:b9d0248ca2dae2b15a29f2d29d81175072a3ffb48056238d6d9584597810878d"
+                "sha256:4103382697418c24702b7731ef2bd73606ca6a86336b1a898e97c34d0d241c69",
+                "sha256:d809ac570f630491778b47ae8d02475162f04eeb0ca39ccd3f4112d729d7eaa7"
             ],
-            "version": "==1.12.231"
+            "version": "==1.12.234"
         },
         "cffi": {
             "hashes": [
@@ -154,11 +154,15 @@
             "version": "==0.5"
         },
         "gqlmod-github": {
-            "editable": true,
             "extras": [
                 "app"
             ],
-            "path": "/home/astraluma/code/gqlmod/gqlmod-github"
+            "hashes": [
+                "sha256:05216f82173f8a0ba3a382b8fff1b67efb42a5cd45a82a26d11a12ab5e4dfa44",
+                "sha256:176139d0440bfb9133390197740f300bc4ae7da0c8c15808ca4336aa27345352"
+            ],
+            "index": "pypi",
+            "version": "==0.3"
         },
         "graphql-core": {
             "hashes": [
@@ -265,11 +269,11 @@
         },
         "urllib3": {
             "hashes": [
-                "sha256:319cef72311e511d94be1bb478d202fde499935d0347a9e8f0d232dc3bce47c6",
-                "sha256:8a8090dd02b145256534c205e624eb20161080428ffa14408f6f283c0d0c356e"
+                "sha256:2f3eadfea5d92bc7899e75b5968410b749a054b492d5a6379c1344a1481bc2cb",
+                "sha256:9c6c593cb28f52075016307fc26b0a0f8e82bc7d1ff19aaaa959b91710a56c47"
             ],
             "markers": "python_version >= '3.4'",
-            "version": "==1.25.4"
+            "version": "==1.25.5"
         },
         "werkzeug": {
             "hashes": [
