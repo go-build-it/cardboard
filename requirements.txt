@@ -2,5 +2,5 @@ pulumi
 pulumi_aws
 pipenv
 
--e ../putils
--e ../deplumi
+-e git+ssh://git@github.com/dingbots/putils.git#egg=putils
+-e git+ssh://git@github.com/dingbots/deplumi.git#egg=deplumi
