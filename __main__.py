@@ -4,8 +4,23 @@ from deplumi import Package, AwsgiHandler
 from pulumi_aws import route53
 
 config = pulumi.Config('cardboard')
+basedomain = config.require("domain")
 
-zone = route53.get_zone(name='dingbots.dev')
+
+def find_zone(domain):
+    zonename = domain
+    while '.' in zonename:
+        try:
+            zone = route53.get_zone(name=zonename)
+        except Exception:
+            _, zonename = zonename.split('.', 1)
+        else:
+            return zone
+    else:
+        raise ValueError(f"Unable to find zone for domain {domain}")
+
+
+zone = find_zone(basedomain).id
 
 apiserv = Package(
     'Api',
@@ -15,7 +30,7 @@ apiserv = Package(
     **opts()
 )
 
-api_domain = f'api.{config.require("domain")}'
+api_domain = f'api.{basedomain}'
 
 AwsgiHandler(
     'ApiService',
