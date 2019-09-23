@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+boto3 = "*"
+boto3-extensions = "*"
+flask = "*"
+aws-wsgi = ">=0.2.0"
+gqlmod = "*"
+gqlmod-github = {extras = ["app"]}
+github-webhook = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
