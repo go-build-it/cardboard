@@ -25,7 +25,7 @@ app = Flask(__name__)
 webhook = github_webhook.Webhook(
     app,
     endpoint='/postreceive',
-    secret=os.environ.get('github_hook_secret'),
+    secret=os.environ.get('github_webhook_secret'),
 )
 
 
